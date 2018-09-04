@@ -98,8 +98,8 @@ def inertia_move(v=0, target_v=0, rate=1, increment=1):
 # application and analog meter.
 #
 move_rate = 0.050    # seconds to move 1 volt on a -10 to +10 volt scale
-move_inc = 0.500     # smallest movement representing input voltage
-output_hold = 0.010  # number of seconds to hold position before repositioning
+move_inc = 0.050     # smallest movement representing input voltage
+output_hold = 0  # number of seconds to hold position before repositioning
 
 print("2018-09-03 Retro CV Meter v01.py")
 print("GC.mem_free: ", gc.mem_free())
