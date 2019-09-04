@@ -1,0 +1,334 @@
+EESchema Schematic File Version 4
+LIBS:2018-08-20 analog Trinket sub-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Analog Trinket Substitute Sub-Module"
+Date "2018-08-20"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7425 4300 0    70   ~ 0
+ANALOG TRINKET SUBSTITUTE
+$Comp
+L power:GND #PWR04
+U 1 1 5B76E6F3
+P 3950 3375
+F 0 "#PWR04" H 3950 3125 50  0001 C CNN
+F 1 "GND" H 3955 3202 50  0000 C CNN
+F 2 "" H 3950 3375 50  0001 C CNN
+F 3 "" H 3950 3375 50  0001 C CNN
+	1    3950 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5B76E763
+P 4300 6875
+F 0 "#PWR05" H 4300 6625 50  0001 C CNN
+F 1 "GND" H 4305 6702 50  0000 C CNN
+F 2 "" H 4300 6875 50  0001 C CNN
+F 3 "" H 4300 6875 50  0001 C CNN
+	1    4300 6875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3025 4050 3025
+Connection ~ 4750 2925
+Text Notes 4275 3525 0    50   ~ 0
+gain = 1.0\ninverter stage
+Text Notes 3225 7125 0    50   ~ 0
+Power Management
+$Comp
+L device:R R1
+U 1 1 5B7B9582
+P 3500 2825
+F 0 "R1" V 3293 2825 50  0000 C CNN
+F 1 "10K" V 3384 2825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3430 2825 50  0001 C CNN
+F 3 "" H 3500 2825 50  0001 C CNN
+	1    3500 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5B7B9643
+P 4300 2325
+F 0 "R2" V 4093 2325 50  0000 C CNN
+F 1 "10K" V 4184 2325 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4230 2325 50  0001 C CNN
+F 3 "" H 4300 2325 50  0001 C CNN
+	1    4300 2325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 2325 3850 2325
+Wire Wire Line
+	3850 2825 4050 2825
+Wire Wire Line
+	3650 2825 3850 2825
+Connection ~ 3850 2825
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5B7D8386
+P 4900 5975
+F 0 "#PWR09" H 4900 5825 50  0001 C CNN
+F 1 "+3V3" H 4915 6148 50  0000 C CNN
+F 2 "" H 4900 5975 50  0001 C CNN
+F 3 "" H 4900 5975 50  0001 C CNN
+	1    4900 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5B7F56F9
+P 4625 2575
+F 0 "#PWR06" H 4625 2325 50  0001 C CNN
+F 1 "GND" H 4630 2402 50  0000 C CNN
+F 2 "" H 4625 2575 50  0001 C CNN
+F 3 "" H 4625 2575 50  0001 C CNN
+	1    4625 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3025 3950 3375
+$Comp
+L power:+BATT #PWR03
+U 1 1 5B823DF6
+P 3700 5975
+F 0 "#PWR03" H 3700 5825 50  0001 C CNN
+F 1 "+BATT" H 3715 6148 50  0000 C CNN
+F 2 "" H 3700 5975 50  0001 C CNN
+F 3 "" H 3700 5975 50  0001 C CNN
+	1    3700 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR07
+U 1 1 5B823E70
+P 4750 3375
+F 0 "#PWR07" H 4750 3225 50  0001 C CNN
+F 1 "+BATT" H 4765 3548 50  0000 C CNN
+F 2 "" H 4750 3375 50  0001 C CNN
+F 3 "" H 4750 3375 50  0001 C CNN
+	1    4750 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L linear:TL071 U1
+U 1 1 5B85B3CC
+P 4350 2925
+F 0 "U1" H 4500 3125 50  0000 L CNN
+F 1 "TLV2461" H 4475 3050 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4400 2975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl072a.pdf" H 4500 3075 50  0001 C CNN
+	1    4350 2925
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4650 2925 4750 2925
+Wire Wire Line
+	4750 3375 4250 3375
+Wire Wire Line
+	4250 3375 4250 3225
+Wire Wire Line
+	4250 2475 4625 2475
+Wire Wire Line
+	4625 2475 4625 2575
+Wire Wire Line
+	4250 2475 4250 2625
+Wire Wire Line
+	4750 2325 4450 2325
+Wire Wire Line
+	4750 2325 4750 2925
+Wire Wire Line
+	3850 2325 3850 2825
+Wire Wire Line
+	3350 2825 3050 2825
+Wire Wire Line
+	4750 2925 5200 2925
+NoConn ~ 4350 2625
+NoConn ~ 4450 2625
+Text Label 3125 2825 0    50   ~ 0
+A1
+Text Label 5000 2925 0    50   ~ 0
+A0~~
+$Comp
+L Adafruit:Trinket_M0 U3
+U 1 1 5B8AF4A6
+P 4275 4600
+F 0 "U3" H 4275 5065 50  0000 C CNN
+F 1 "Trinket_M0" H 4275 4974 50  0000 C CNN
+F 2 "Adafruit:Trinket_M0_no_holes" H 4275 4950 50  0001 C CNN
+F 3 "" H 4275 4950 50  0001 C CNN
+	1    4275 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 4400 3625 4400
+Wire Wire Line
+	3625 4400 3625 4175
+Wire Wire Line
+	3775 4500 3625 4500
+Wire Wire Line
+	3625 4500 3625 5000
+Wire Wire Line
+	4775 4600 5100 4600
+Wire Wire Line
+	4775 4700 5100 4700
+Wire Wire Line
+	4775 4800 4900 4800
+Wire Wire Line
+	4900 4800 4900 4500
+$Comp
+L power:GND #PWR02
+U 1 1 5B8C4AC3
+P 3625 5000
+F 0 "#PWR02" H 3625 4750 50  0001 C CNN
+F 1 "GND" H 3630 4827 50  0000 C CNN
+F 2 "" H 3625 5000 50  0001 C CNN
+F 3 "" H 3625 5000 50  0001 C CNN
+	1    3625 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR01
+U 1 1 5B8C4B34
+P 3625 4175
+F 0 "#PWR01" H 3625 4025 50  0001 C CNN
+F 1 "+BATT" H 3640 4348 50  0000 C CNN
+F 2 "" H 3625 4175 50  0001 C CNN
+F 3 "" H 3625 4175 50  0001 C CNN
+	1    3625 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5B8C4BA5
+P 4900 4200
+F 0 "#PWR08" H 4900 4050 50  0001 C CNN
+F 1 "+3V3" H 4915 4373 50  0000 C CNN
+F 2 "" H 4900 4200 50  0001 C CNN
+F 3 "" H 4900 4200 50  0001 C CNN
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+Text Label 5000 4700 0    50   ~ 0
+A1
+Text Label 4975 4600 0    50   ~ 0
+A0~~
+NoConn ~ 4775 4400
+NoConn ~ 3775 4800
+Wire Wire Line
+	3775 4600 3700 4600
+Wire Wire Line
+	3700 4600 3700 4700
+Wire Wire Line
+	3700 4975 4900 4975
+Wire Wire Line
+	4900 4975 4900 4800
+Connection ~ 4900 4800
+Wire Wire Line
+	3775 4700 3700 4700
+Connection ~ 3700 4700
+Wire Wire Line
+	3700 4700 3700 4975
+Wire Wire Line
+	4775 4500 4900 4500
+Connection ~ 4900 4500
+Wire Wire Line
+	4900 4500 4900 4200
+$Comp
+L device:C_Small C1
+U 1 1 5B7BB862
+P 4300 1975
+F 0 "C1" V 4071 1975 50  0000 C CNN
+F 1 "10uF" V 4162 1975 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4300 1975 50  0001 C CNN
+F 3 "" H 4300 1975 50  0001 C CNN
+	1    4300 1975
+	0    1    1    0   
+$EndComp
+$Comp
+L regul:LT1761-5 U2
+U 1 1 5B7BCC66
+P 4300 6225
+F 0 "U2" H 4300 6592 50  0000 C CNN
+F 1 "MIC5225-3V" H 4300 6501 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4350 5975 50  0001 L CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/1761sff.pdf" H 4300 6225 50  0001 C CNN
+	1    4300 6225
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 6225
+$Comp
+L device:CP1_Small C3
+U 1 1 5B7BDFF1
+P 4900 6525
+F 0 "C3" H 4991 6571 50  0000 L CNN
+F 1 "10uF" H 4991 6480 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4900 6525 50  0001 C CNN
+F 3 "" H 4900 6525 50  0001 C CNN
+	1    4900 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP1_Small C2
+U 1 1 5B7BE05B
+P 3700 6525
+F 0 "C2" H 3500 6600 50  0000 L CNN
+F 1 "10uF" H 3425 6525 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3700 6525 50  0001 C CNN
+F 3 "" H 3700 6525 50  0001 C CNN
+	1    3700 6525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5975 4900 6125
+Wire Wire Line
+	4900 6625 4900 6775
+Wire Wire Line
+	4900 6775 4300 6775
+Wire Wire Line
+	4300 6775 4300 6875
+Wire Wire Line
+	4300 6775 4300 6525
+Connection ~ 4300 6775
+Wire Wire Line
+	4700 6125 4900 6125
+Connection ~ 4900 6125
+Wire Wire Line
+	4900 6125 4900 6425
+Wire Wire Line
+	4750 2325 4750 1975
+Wire Wire Line
+	4750 1975 4400 1975
+Connection ~ 4750 2325
+Wire Wire Line
+	4200 1975 3850 1975
+Wire Wire Line
+	3850 1975 3850 2325
+Connection ~ 3850 2325
+Wire Wire Line
+	4300 6775 3700 6775
+Wire Wire Line
+	3700 6775 3700 6625
+Wire Wire Line
+	3700 6425 3700 6325
+Wire Wire Line
+	3900 6125 3700 6125
+Connection ~ 3700 6125
+Wire Wire Line
+	3700 6125 3700 5975
+Wire Wire Line
+	3900 6325 3700 6325
+Connection ~ 3700 6325
+Wire Wire Line
+	3700 6325 3700 6125
+$EndSCHEMATC

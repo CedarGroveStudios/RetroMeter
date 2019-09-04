@@ -1,0 +1,45 @@
+Circuit: * C:\Users\Jan\Desktop\2018-08-18 retro meter v02\LTSpice simulation.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+Gmin = 4.20774e-007
+vernier = 0.666667
+vernier = 0.888888
+Gmin = 8.12392e-008
+vernier = 1
+Gmin = 9.33136e-009
+Gmin = 1.00195e-009
+Gmin = 1.07583e-010
+Gmin = 1.15517e-011
+Gmin = 1.24035e-012
+Gmin = 1.33182e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Tue Aug 21 21:24:57 2018
+Total elapsed time: 0.081 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2575
+traniter = 2086
+tranpoints = 1044
+accept = 1044
+rejected = 0
+matrix size = 14
+fillins = 2
+solver = Normal
+Matrix Compiler1: 706 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

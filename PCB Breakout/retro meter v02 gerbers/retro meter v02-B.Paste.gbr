@@ -1,0 +1,23 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.0.0-rc2-dev-444-g2974a2c10)*
+G04 #@! TF.CreationDate,2018-09-21T18:48:47-07:00*
+G04 #@! TF.ProjectId,retro meter v02,726574726F206D65746572207630322E,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Paste,Bot*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.0.0-rc2-dev-444-g2974a2c10)) date 09/21/18 18:48:47*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,1.000000X3.500000*%
+%ADD11R,1.500000X3.400000*%
+G04 APERTURE END LIST*
+D10*
+X192135000Y-54875000D03*
+X194135000Y-54875000D03*
+D11*
+X189785000Y-49125000D03*
+X196485000Y-49125000D03*
+M02*
