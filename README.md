@@ -1,5 +1,5 @@
 # RetroMeter
-A breakout and FeatherWing PCB with CircuitPython code that converts a +/-10V CV signal to a current level compatible with a retro analog ammeter. USB or 3 to 6V battery powered (no internal battery charger). From the collaborative project with John Park’s Workshop.
+A breakout and FeatherWing PCB family with CircuitPython code that converts a +/-10V CV signal to a current level compatible with a retro analog ammeter. USB or 3 to 6V battery powered (no internal battery charger). From the collaborative project with John Park’s Workshop.
 
 ![Retro CV Meter and Trinket M0 Rendering](https://github.com/CedarGroveStudios/RetroMeter/blob/master/photos/retro%20meter%20v02.png)
 
